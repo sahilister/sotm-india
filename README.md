@@ -1,1 +1,4 @@
-State of The Map India 2026 Official Website
+# sotm-india
+State Of The Map India Website
+
+Official website: [https://stateofthemap.in](https://stateofthemap.in)
