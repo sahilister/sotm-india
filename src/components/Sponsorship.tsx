@@ -18,7 +18,7 @@ const SponsorshipTier = ({
     <div className="flex justify-between items-start mb-6">
       <div>
         <h3 className="text-2xl font-bold">{name}</h3>
-        {!isIndividual && <span className="text-sm opacity-90">{name === 'Platinum' ? 'Title Sponsor' : (name === 'Gold' ? 'Co-Sponsor' : '')}</span>}
+        {!isIndividual && <span className="text-sm opacity-90">{name === 'Platinum' ? 'Title Sponsor' : (name === 'Gold' ? 'Co-Sponsor' : (name === 'Individual' ? 'Support the conference as an individual!' : ''))}</span>}
       </div>
       {price && (
         <div className="text-right">
@@ -80,7 +80,6 @@ export default function Sponsorship() {
       gradient: "bg-gradient-to-br from-[#B8860B] to-[#CD853F]", // Bronze/Copper
       isIndividual: true,
       features: [
-        "Support the conference as an individual!",
         "Gold Tier @ ₹5,000",
         "Silver Tier @ ₹2,000"
       ]
