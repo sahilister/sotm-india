@@ -1,12 +1,15 @@
 'use client';
 
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const pathname = usePathname();
+  const isRegisterPage = pathname === '/register';
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
   const closeMenu = () => setIsMenuOpen(false);
@@ -41,12 +44,14 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <Link 
-            href="#register" 
-            className="hidden md:block px-5 py-2 bg-accent text-secondary font-bold rounded-full shadow-lg hover:bg-highlight hover:shadow-xl transition-all transform hover:scale-105"
-          >
-            Register Now
-          </Link>
+          {!isRegisterPage && (
+            <Link 
+              href="/register" 
+              className="hidden md:block px-5 py-2 bg-accent text-secondary font-bold rounded-full shadow-lg hover:bg-highlight hover:shadow-xl transition-all transform hover:scale-105"
+            >
+              Register Now
+            </Link>
+          )}
           <button 
             className="md:hidden p-2 text-white hover:text-accent transition-colors"
             onClick={toggleMenu}
@@ -74,13 +79,15 @@ export default function Navbar() {
               {link.label}
             </Link>
           ))}
-          <Link
-            href="#register"
-            className="block px-5 py-2 bg-accent text-secondary font-bold rounded-full shadow-lg hover:bg-highlight transition-all text-center mt-4"
-            onClick={closeMenu}
-          >
-            Register Now
-          </Link>
+          {!isRegisterPage && (
+            <Link
+              href="/register"
+              className="block px-5 py-2 bg-accent text-secondary font-bold rounded-full shadow-lg hover:bg-highlight transition-all text-center mt-4"
+              onClick={closeMenu}
+            >
+              Register Now
+            </Link>
+          )}
         </div>
       </div>
     </nav>

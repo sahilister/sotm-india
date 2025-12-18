@@ -33,3 +33,31 @@ body {
   color: var(--foreground);
   font-family: var(--font-sans);
 }
+
+/* Razorpay Payment Button Styles */
+.razorpay-form {
+  display: inline-block;
+}
+
+.razorpay-payment-button {
+  background: linear-gradient(135deg, #99DA71 0%, #7BB05A 100%) !important;
+  color: #1E293B !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  border-radius: 9999px !important;
+  border: none !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  transition: all 0.3s ease !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+}
+
+.razorpay-payment-button:hover {
+  background: linear-gradient(135deg, #D8FBC8 0%, #99DA71 100%) !important;
+  transform: scale(1.05) !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05) !important;
+}
+
+.razorpay-payment-button:active {
+  transform: scale(0.98) !important;
+}
