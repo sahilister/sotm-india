@@ -65,7 +65,7 @@ export default function RegisterPage() {
               Register for SOTM India 2026
             </h1>
             <p className="text-xl text-neutral-300 max-w-2xl mx-auto">
-              Choose your preferred currency to complete your registration
+              Choose the payment option depending on your residence status.
             </p>
           </motion.div>
 
@@ -142,6 +142,10 @@ export default function RegisterPage() {
               <div className="flex items-start gap-3">
                 <span className="text-accent text-lg">✓</span>
                 <p>All payments are final and non-refundable</p>
+              </div>
+              <div className='flex items-start gap-3'>
+                <span className="text-accent text-lg">●</span>
+                <p>Please note that all financial transactions are happening through Rotten Grapes Pvt ltd, the main organiser of Foss4G Asia 2026.</p>
               </div>
             </div>
           </motion.div>
