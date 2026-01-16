@@ -148,6 +148,7 @@ export default function RegisterPage() {
                 <p>Please note that all financial transactions are happening through Rotten Grapes Pvt ltd, the main organiser of Foss4G Asia 2026.</p>
               </div>
             </div>
+            </motion.div>
         </div>
       </div>
       <Footer />
