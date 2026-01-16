@@ -81,14 +81,6 @@ export default function Hero() {
               Register Now
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
-            <a 
-              href="https://nc.stateofthemap.in/apps/forms/s/C55M4owYKENF4pS6aMMqY2mN" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 bg-white/10 border border-white/20 hover:bg-white/20 backdrop-blur-md rounded-full font-medium transition-all"
-            >
-              Interest Form
-            </a>
           </div>
         </motion.div>
       </div>

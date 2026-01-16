@@ -148,27 +148,6 @@ export default function RegisterPage() {
                 <p>Please note that all financial transactions are happening through Rotten Grapes Pvt ltd, the main organiser of Foss4G Asia 2026.</p>
               </div>
             </div>
-          </motion.div>
-
-          {/* Interest Form CTA */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-center mb-12"
-          >
-            <p className="text-white text-lg mb-4 font-medium">
-              Not ready to register? Fill out our interest form instead
-            </p>
-            <a 
-              href="https://nc.stateofthemap.in/apps/forms/s/C55M4owYKENF4pS6aMMqY2mN" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-10 py-3 bg-accent text-secondary font-bold rounded-full shadow-lg hover:bg-highlight hover:shadow-xl transition-all transform hover:scale-105"
-            >
-              Interest Form
-            </a>
-          </motion.div>
         </div>
       </div>
       <Footer />
